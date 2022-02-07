@@ -1,0 +1,144 @@
+/* SQUARES */
+.card-squares { /*section*/
+    background-color: #370617;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    padding: 90px 0;
+}
+
+.container-squares { /* rectangle */
+    width: 468px;
+    height: 160px;
+    padding: 10px;
+    margin: 20px 20px;
+    border-radius: 8px;
+    background-color: #F48C06;
+    border: solid pink;
+    display: flex;
+}
+
+.box:not(.box-second, .box-fifth) { /* flexboxes */
+    background: #9D0208;
+    border-radius: 4px;
+    width: 78px;
+    height: 78px;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.box-second, .box-fifth {
+    background: #9D0208;
+    border-radius: 4px;
+    width: 78px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.first-squares { /* done */
+    align-items: flex-end;
+}
+
+.second-squares { /*stretch doesn't work*/
+    justify-content: center;
+    align-items: stretch;
+}
+
+.third-squares { /* done */
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.fourth-squares { /*done*/
+    justify-content: space-between;
+}
+
+.low_box { /* done */
+    align-self: flex-end;
+}
+
+.fifth-squares { /*stretch not working*/
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.middle_box {
+    align-self: center;
+}
+
+.box_content {
+    color: blanchedalmond;
+}
+
+.sixth-squares {
+    justify-content: center;
+    align-items: center;
+}
+
+.grow_box {
+    flex-grow: 0.5;
+}
+
+/* CIRCLES */
+.card-circles {
+    background-color: #FAA307;
+    min-height: 100vh;
+    padding: 120px 147px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+
+.container-circles { /* In this case, should I specify the width and height?*/
+    width: 273px;
+    height: 220px;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.first-circles, .third-circles, .fifth-circles {
+    background-color: #03071E;
+}
+
+.second-circles, .fourth-circles {
+    background-color: #6A040F;
+}
+
+.circle {
+    background-color: #748CAB;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.first-circles {
+    align-content: flex-start;
+}
+
+.second-circles {
+    flex-flow: row-reverse wrap-reverse;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.third-circles {
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.fourth-circles {
+    align-content: space-around;
+    justify-content: space-between;
+}
+
+.fifth-circles {
+    justify-content: center;
+    align-content: center;
+}
